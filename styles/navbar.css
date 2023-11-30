@@ -1,0 +1,47 @@
+body {
+    @apply m-0 bg-gray-300 font-sans font-semibold;
+  }
+
+  .container {
+    @apply mx-auto;
+  }
+
+  header {
+    @apply bg-green-500;
+  }
+
+  header::after {
+    @apply block clear-both content-[''] ;
+  }
+
+  .logo {
+    @apply float-left p-2;
+  }
+
+  nav {
+    @apply float-right;
+  }
+
+  nav ul {
+    @apply m-0 p-0 list-none;
+  }
+
+  nav li {
+    @apply inline-block ml-10 pt-6 relative;
+  }
+
+  nav a {
+    @apply text-gray-800 no-underline uppercase text-sm;
+  }
+
+  nav a:hover {
+    @apply text-green-800;
+  }
+
+  nav a::before {
+    @apply block h-1/5 bg-gray-800 absolute top-0 w-0 transition-all duration-250 ease-in-out content-[''] ;
+  }
+
+  nav a:hover::before {
+    @apply w-full;
+  }
